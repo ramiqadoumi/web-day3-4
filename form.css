@@ -13,3 +13,6 @@ input{
 p{
     color: red;
 }
+ul {
+    width: 8em;
+  }
