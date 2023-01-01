@@ -1,0 +1,15 @@
+input{
+    border: 2px solid gray;
+    width: 100px;
+}
+.line{
+    height: 100%;
+    width: 2px;
+    background-color: gray;
+}
+.inp{
+    width: 300px;
+}
+p{
+    color: red;
+}

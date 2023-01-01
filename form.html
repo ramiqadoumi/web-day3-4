@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <script>
+    // $(document).ready(function () {
+    //   $("#flip").click(function () {
+    //     $("#panel").slideToggle("slow");
+    //   });
+    // });
+    $(document).ready(function () {
+      $("#my_cs_menu").menu();
+    });
+
+    $(document).ready(function () {
+      $(".test").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+    });
+  </script>
+  <style>
+    ul {
+      width: 8em;
+    }
+    /* #panel,
+    #flip {
+      width: 20%;
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      padding: 10px;
+      display: none;
+    } */
+  </style>
+  <body>
+    <center><h1>Sponsor Registration</h1></center>
+    <br />
+    <center>
+      <ul id="my_cs_menu">
+        <li>
+          <div>Item1</div>
+        </li>
+
+        <li>
+          <div>Item2</div>
+          <ul>
+            <li>
+              <div>Item1</div>
+            </li>
+            <li>
+              <div>Item2</div>
+            </li>
+            <li>
+              <div>Item3</div>
+            </li>
+            <li>
+              <div>Item4</div>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div>Item3</div>
+          <ul>
+            <li>
+              <div>Item1</div>
+              <ul>
+                <li>
+                  <div>Item1</div>
+                </li>
+                <li>
+                  <div>Item2</div>
+                </li>
+                <li>
+                  <div>Item3</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>Item2</div>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div>Item4</div>
+        </li>
+      </ul>
+    </center>
+
+    <!-- <div id="flip">Click to slide the panel down or up</div>
+      <div id="panel">
+        <p><a href="">ttt</a></p>
+        <p><a href="">ttt</a></p>
+        <p><a href="">ttt</a></p>
+      </div> -->
+    <br />
+    <div class="container">
+      <form action="" name="validation" onsubmit="return validateForm()">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Prefix </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="prf" id="" />
+                <p id="prf"></p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Name </label>
+              </div>
+              <div class="col-sm-5">
+                <input
+                  type="text"
+                  name="fname"
+                  id=""
+                  placeholder="First name"
+                />
+                <input type="text" name="lname" id="" placeholder="Last name" />
+                <p id="first"></p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Preferred Pronouns </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="pname" />
+                <p id="pname"></p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Email</label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Called phone </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Work phone </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Job title </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="">Company </label>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1"><div class="line"></div></div>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-5">
+                <label for="">Company describtion</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="">Company Facebook Page</label>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-5">
+                <input type="text" class="inp" name="facebook" />
+                <p id="facebook"></p>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="">Company Twitter Handel</label>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-5">
+                <input type="text" class="inp" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-5">
+                <label for="">Company LinkedIn</label>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-5">
+                <input type="text" class="inp" />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <span>Sponsorship level</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <input type="radio" name="r" id="1" />
+                <label for="1">Gold</label>
+                <input type="radio" name="r" id="2" />
+                <label for="2">Diamond</label>
+                <input type="radio" name="r" id="3" />
+                <label for="3">Platinum</label><br /><br />
+                <center><input type="submit" value="Submit" /></center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br />
+    </div>
+  </body>
+  <script src="form.js"></script>
+</html>
